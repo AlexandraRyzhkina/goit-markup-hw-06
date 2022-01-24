@@ -322,10 +322,23 @@ img {
 }
 
 /* ФОРМА МОДАЛКА */
+.hero-form-heading {
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--secondary-txt-col);
+
+    margin-bottom: 12px;
+}
 
 .form {
-    width: 528px;
-    height: 581px;
+
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .form-field {
@@ -334,15 +347,49 @@ img {
     margin-bottom: 10px;
 }
 
-.form-field input {
+.form-field input,
+.form-field textarea {
     margin: 0;
     padding: 11px;
-    border: 1px solid tomato;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: none;
+    height: 120px;
 }
 
 .form-field label {
     margin-bottom: 4px;
 }
+
+.button.form {
+    display: block;
+    border-style: none;
+    border-color: none;
+    cursor: pointer;
+
+    width: 200px;
+    height: 50px;
+
+    margin-right: auto;
+    margin-left: auto;
+    
+
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+
+
+    letter-spacing: 0.06em;
+
+    color: #FFFFFF;
+    background-color: var(--accent-col);
+}
+
 
 
 /* ПОЧЕМУ СВГ И ДЖПЕГ ПОВЕРХУ МОДАЛКИ ПРИ ПРОКРУТКЕ? */
@@ -719,7 +766,7 @@ img {
     list-style: none;
     text-decoration: none;
 
-    
+
 }
 
 .footer-item-social {
@@ -748,7 +795,7 @@ img {
 
 /* ФОРМА ПОДПИСАТЬСЯ ФУТЕР */
 
-.footer-form{
+.footer-form {
     margin-left: 93px;
     padding-top: 12px;
 
@@ -789,7 +836,7 @@ img {
     width: 24px;
     height: 24px;
     margin-left: 10px;
-     
+
     background-image: url(../images/send.svg);
 
 }

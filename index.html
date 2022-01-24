@@ -67,27 +67,37 @@
         <div data-modal class="backdrop is-hidden">
             <div class="modal">
                 <button class="button-modal" data-modal-close type="button"></button>
-
+                <h2 class="hero-form-heading">Оставьте свои данные, мы вам перезвоним</h2>
                 <form class="form">
-                    <h2>Остьавьте свои данные, мы вам перезвоним</h2>
 
-                    <div class=" form-field">
+                    <div class="form-field">
                         <label for="name">Имя</label>
                         <input type="text" name="name" id="name" placeholder="иконка" autofocus>
                     </div>
 
-                    <div class=" form-field">
+                    <div class="form-field">
                         <label for="tel">Телефон</label>
                         <input type="tel" name="tel" id="tel" placeholder="иконка">
                     </div>
 
-                    <div class=" form-field">
+                    <div class="form-field">
                         <label for="mail">Почта</label>
                         <input type="mail" name="mail" id="mail" placeholder="иконка">
                     </div>
 
+                    <div class="form-field">
+                        <label for="comment">Комментарий</label>
+                        <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
+                    </div>
+                    <div class="form-field">
+                        <input type="checkbox" name="" id="check">
+                        <label for="check">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+
+                    </div>
+                    <button class="button form" type="submit"> Отправить</button>
 
                 </form>
+
 
             </div>
         </div>
@@ -442,8 +452,8 @@
                 </div>
                 <div class="footer-form">
                     <h2 class="footer-heading">Подпишитесь на рассылку</h2>
-                    <label  for="signup"></label>
-                        <input class="footer-signup" type="mail" name="mail" id="signup" placeholder="E-mail">
+                    <label for="signup"></label>
+                    <input class="footer-signup" type="mail" name="mail" id="signup" placeholder="E-mail">
                     <button class="button sign" type="button">Подписаться</button>
                 </div>
             </div>
