@@ -295,7 +295,7 @@ img {
 }
 
 .button-modal {
-    
+
     margin-left: auto;
     display: block;
 
@@ -310,7 +310,7 @@ img {
 
     content: "";
     display: block;
-    
+
 
     width: 30px;
     height: 30px;
@@ -319,6 +319,29 @@ img {
     background-size: contain;
 
 
+}
+
+/* ФОРМА МОДАЛКА */
+
+.form {
+    width: 528px;
+    height: 581px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form-field input {
+    margin: 0;
+    padding: 11px;
+    border: 1px solid tomato;
+}
+
+.form-field label {
+    margin-bottom: 4px;
 }
 
 
@@ -549,7 +572,7 @@ img {
     transition: background-color 250ms var(--cubic)
 }
 
-.link-social.footer{
+.link-social.footer {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -566,7 +589,8 @@ img {
 
 }
 
-.link-social:hover, .link-social:focus {
+.link-social:hover,
+.link-social:focus {
     fill: var(--white-txt-col);
     background-color: var(--accent-col);
 }
@@ -688,22 +712,23 @@ img {
     color: var(--white-txt-col);
     font-size: 14px;
     line-height: 1.14;
+    padding-bottom: 20px;
 }
 
 .footer-list-item-social {
     list-style: none;
     text-decoration: none;
 
-    padding-top: 20px;
+    
 }
 
 .footer-item-social {
     display: inline-block;
     border-radius: 50px;
 
-    
+
     transition: background-color 250ms var(--cubic);
-    
+
 
 }
 
@@ -713,12 +738,74 @@ img {
 
 .footer-item-social>.link-social {
     fill: var(--primary-bg-col);
-    
+
 }
 
 .footer-item-social:hover,
 .footer-item-social:focus {
     background-color: var(--accent-col);
+}
+
+/* ФОРМА ПОДПИСАТЬСЯ ФУТЕР */
+
+.footer-form{
+    margin-left: 93px;
+    padding-top: 12px;
+
+}
+
+.button.sign {
+    position: relative;
+
+    border-style: none;
+    border-color: none;
+    cursor: pointer;
+
+    width: 200px;
+    height: 50px;
+    padding: 10px 53px 10px 29px;
+
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+
+
+    text-align: center;
+    align-items: center;
+    letter-spacing: 0.06em;
+
+    color: #FFFFFF;
+    background-color: var(--accent-col);
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+}
+
+.button.sign::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+     
+    background-image: url(../images/send.svg);
+
+}
+
+.footer-signup {
+    width: 358px;
+    height: 50px;
+
+    padding: 15px 16px;
+
+    color: var(--white-txt-col);
+
+    background-color: transparent;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15));
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 /* portfolio html */
