@@ -66,41 +66,60 @@
 
         <div data-modal class="backdrop is-hidden">
             <div class="modal">
-                <button class="button-modal" data-modal-close type="button"></button>
+                <button class="button-modal" data-modal-close type="button"> <svg class="modal-close">
+                        <use href="images/sprite.svg#modalclose"></use>
+                    </svg></button>
                 <h2 class="hero-form-heading">Оставьте свои данные, мы вам перезвоним</h2>
                 <form class="form">
 
                     <div class="form-field">
-                        <label for="name">Имя</label>
-                        <input type="text" name="name" id="name" placeholder="иконка" autofocus>
+
+                        <input class="form-input" type="text" name="name" id="name" autofocus>
+                        <label class="form-label" for="name">Имя</label>
+                        <svg class="icon-modal">
+                            <use href="images/sprite.svg#modalman"></use>
+                        </svg>
+                    </div>
+
+
+                    <div class="form-field">
+                        <input class="form-input" type="tel" name="tel" id="tel">
+                        <label class="form-label" for="tel">Телефон</label>
+                        <svg class="icon-modal">
+                            <use href="./images/sprite.svg#modalphone"></use>
+                        </svg>
                     </div>
 
                     <div class="form-field">
-                        <label for="tel">Телефон</label>
-                        <input type="tel" name="tel" id="tel" placeholder="иконка">
+                        <input class="form-input" type="mail" name="mail" id="mail">
+                        <label class="form-label" for="mail">Почта</label>
+                        <svg class="icon-modal">
+                            <use href="./images/sprite.svg#modalmail"></use>
+                        </svg>
                     </div>
 
                     <div class="form-field">
-                        <label for="mail">Почта</label>
-                        <input type="mail" name="mail" id="mail" placeholder="иконка">
+
+                        <textarea class="form-input" name="comment" id="comment" rows="5" cols="30"
+                            placeholder="Введите текст"></textarea>
+                        <label class="form-label" for="comment">Комментарий</label>
                     </div>
 
-                    <div class="form-field">
-                        <label for="comment">Комментарий</label>
-                        <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
-                    </div>
-                    <div class="form-field">
-                        <input type="checkbox" name="" id="check">
-                        <label for="check">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
 
-                    </div>
+
+
+                    <label class="checkbox-label">
+                        <input class="checkbox" type="checkbox" name="agreement"> Соглашаюсь с рассылкой и
+                        принимаю <a href="">Условия договора</a></label>
+
+
                     <button class="button form" type="submit"> Отправить</button>
 
                 </form>
-
-
             </div>
+
         </div>
+
 
         <!-- преимущества -->
         <section class="section features">

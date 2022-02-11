@@ -306,19 +306,31 @@ img {
 
 }
 
-.button-modal::before {
+.button-modal {
 
-    content: "";
     display: block;
 
 
     width: 30px;
     height: 30px;
 
-    background-image: url(../images/close.svg);
     background-size: contain;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
 
+}
 
+.modal-close {
+    fill: black;
+    width: 11px;
+    height: 11px;
+
+    transition: fill 250ms var(--cubic);
+
+}
+
+.button-modal:focus .modal-close {
+    fill: var(--accent-col);
 }
 
 /* ФОРМА МОДАЛКА */
@@ -336,7 +348,7 @@ img {
 }
 
 .form {
-
+    padding-top: 12px;
     padding-left: 40px;
     padding-right: 40px;
 }
@@ -344,26 +356,95 @@ img {
 .form-field {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 28px;
+
+    position: relative;
 }
+
+.form-label {
+    position: absolute;
+    left: 0;
+    top: -20px;
+
+}
+
+.icon-modal {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+
+    fill: var(--secondary-txt-col);
+
+    transform: translatey(-50%);
+
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+
+    transition: fill 250ms var(--cubic);
+
+}
+
+.form-input:focus~.icon-modal {
+    fill: var(--accent-col);
+}
+
+.form-input:focus {
+    outline: none;
+    border: 1px solid var(--accent-col);
+}
+
 
 .form-field input,
 .form-field textarea {
     margin: 0;
-    padding: 11px;
+
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
+
+    transition: border 250ms var(--cubic);
+
 }
 
+
+
 textarea {
+    padding: 11px;
     resize: none;
     height: 120px;
+
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 11px 11px 11px 45px;
 }
 
 .form-field label {
     margin-bottom: 4px;
 }
+
+.checkbox-label{
+    display: block;
+    margin-bottom: 30px;
+
+    text-align: center;
+    
+}
+
+.checkbox{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    position: absolute;
+
+       
+    
+}
+
+
 
 .button.form {
     display: block;
@@ -373,10 +454,14 @@ textarea {
 
     width: 200px;
     height: 50px;
+    border-radius: 4px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     margin-right: auto;
     margin-left: auto;
-    
+
 
     font-family: Roboto;
     font-weight: 700;
@@ -836,6 +921,8 @@ textarea {
     width: 24px;
     height: 24px;
     margin-left: 10px;
+
+    fill: white;
 
     background-image: url(../images/send.svg);
 
