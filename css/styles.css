@@ -280,7 +280,7 @@ img {
 }
 
 .modal {
-    padding: 8px 8px;
+
     position: absolute;
     top: 50%;
     left: 50%;
@@ -294,9 +294,9 @@ img {
 
 }
 
+
 .button-modal {
 
-    margin-left: auto;
     display: block;
 
     border-style: none;
@@ -304,12 +304,10 @@ img {
 
     padding: 0;
 
-}
-
-.button-modal {
-
     display: block;
-
+    position: absolute;
+    top: 8px;
+    right: 8px;
 
     width: 30px;
     height: 30px;
@@ -335,6 +333,7 @@ img {
 
 /* ФОРМА МОДАЛКА */
 .hero-form-heading {
+    margin-bottom: 34px;
 
     font-weight: 700;
     font-size: 20px;
@@ -344,24 +343,25 @@ img {
 
     color: var(--secondary-txt-col);
 
-    margin-bottom: 12px;
 }
 
 .form {
-    padding-top: 12px;
+    padding-top: 40px;
     padding-left: 40px;
     padding-right: 40px;
+    padding-bottom: 40px;
 }
 
 .form-field {
     display: flex;
     flex-direction: column;
     margin-bottom: 28px;
-
+    
     position: relative;
 }
 
 .form-label {
+    font-size: 12px;
     position: absolute;
     left: 0;
     top: -20px;
@@ -407,7 +407,10 @@ img {
 
 }
 
-
+.dogovor{
+    color: var(--accent-col);
+    text-decoration: underline;
+}
 
 textarea {
     padding: 11px;
@@ -416,6 +419,7 @@ textarea {
 
     margin-bottom: 20px;
 }
+
 
 input {
     padding: 11px 11px 11px 45px;
@@ -465,7 +469,8 @@ input {
 
 }
 
-.checkbox:checked~.icon-modalcheck {
+
+.checkbox:checked:focus~.icon-modalcheck {
 
     background-color: var(--accent-col);
     border-color: var(--accent-col);
@@ -927,6 +932,8 @@ input {
     font-weight: 700;
     font-size: 16px;
     line-height: calc(30 / 16);
+
+    margin-left: 10px;
 
 
     text-align: center;
