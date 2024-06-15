@@ -264,9 +264,25 @@ img {
   overflow: auto;
 }
 
-.mob-header.is-open {
+/* .mob-header.is-open {
   opacity: 1;
   pointer-events: auto;
+} */
+.mob-open{
+  display: block;
+  background-color: #ffffff;
+
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-open:hover .mob-open-icon, .mob-open:focus .mob-open-icon{
+  fill: #404bbf;
 }
 
 .mob-close{
