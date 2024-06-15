@@ -387,11 +387,34 @@ color: #434455;
   height: 16px;
   fill: var(--team-social-fill);
   background-repeat: no-repeat;
-
-  /* justify-content: space-between; */
-  /* align-items: center; */
 }
 
+@media screen and (min-width:768px) {
+  .mob-header{
+    display: none;
+  }
+
+  .mob-open{
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+    
+  }
+
+  .auth-list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1158px){
+  .auth-list {
+    display: flex;
+    flex-direction: row;
+  }
+}
 
 /* section hero */
 
